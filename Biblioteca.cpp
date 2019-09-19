@@ -12,12 +12,8 @@ Biblioteca::Biblioteca(int maxLibros, int maxRevistas) {
 void Biblioteca::mostrarBliblioteca() {
     std::cout <<"\nThis are the the books and magazines that the library has: \n";
     for(int i = 0; i < V1.size(); i++){
-        V1[i].mostrar();
+        V1[i]->mostrar();
     }
-}
-
-bool Biblioteca::checkFull() {
-    return false;
 }
 
 void Biblioteca::add(bool LoR) {
@@ -33,7 +29,7 @@ void Biblioteca::add(bool LoR) {
             std::cout <<"Enter the name of the book: "; std:: cin >> name;
             std::cout <<"Enter the number of the volume: "; std:: cin >> numOfVolume;
             std::cout <<"Enter the amount of books: "; std::cin >> num;
-            Libro L1(name,numOfVolume,num);
+            Libro* L1 = new Libro(name,numOfVolume,num);
             V1.push_back(L1);
             maxLibros -= num;
         }
@@ -43,10 +39,10 @@ void Biblioteca::add(bool LoR) {
             std::cout<<"\nNo more space for magazines.\n";
         }
         else{
-            std::cout <<"Enter the name of the book: "; std:: cin >> name;
+            std::cout <<"Enter the name of the magazine: "; std:: cin >> name;
             std::cout <<"Enter the number of the volume: "; std:: cin >> numOfVolume;
-            std::cout <<"Enter the amount of books: "; std::cin >> num;
-            Revista R1(name,numOfVolume,num);
+            std::cout <<"Enter the amount of magazines: "; std::cin >> num;
+            Revista* R1 = new Revista(name,numOfVolume,num);
             V1.push_back(R1);
             maxRevistas -= num;
         }
