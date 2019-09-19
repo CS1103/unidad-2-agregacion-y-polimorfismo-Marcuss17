@@ -7,6 +7,7 @@ class Libro : public Volumen {
 private:
     int numLibros;
 public:
+    Libro()= default;
     Libro(std::string nombre, std::string numVol,int numLibros);
     void mostrar() override;
 };

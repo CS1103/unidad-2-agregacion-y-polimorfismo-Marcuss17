@@ -9,6 +9,7 @@
 
 class Volumen {
 public:
+    Volumen() = default;
     std::string nombre;
     std::string numVol;
     Volumen(std::string nombre, std::string numVol);
