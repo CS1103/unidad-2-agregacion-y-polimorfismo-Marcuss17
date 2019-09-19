@@ -1,0 +1,3 @@
+C:/Users/Eduardo Medina/Desktop/ReposGit/unidad-2-agregacion-y-polimorfismo-Marcuss17/cmake-build-debug/CMakeFiles/unidad_2_agregacion_y_polimorfismo_Marcuss17.dir
+C:/Users/Eduardo Medina/Desktop/ReposGit/unidad-2-agregacion-y-polimorfismo-Marcuss17/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Eduardo Medina/Desktop/ReposGit/unidad-2-agregacion-y-polimorfismo-Marcuss17/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Eduardo Medina/Desktop/ReposGit/unidad-2-agregacion-y-polimorfismo-Marcuss17/main.cpp
+iostream
+-
+
