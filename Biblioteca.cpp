@@ -11,7 +11,7 @@ Biblioteca::Biblioteca(int maxLibros, int maxRevistas) {
 }
 
 void Biblioteca::mostrarBliblioteca() {
-
+    for(int i = 0; i < )
 }
 
 bool Biblioteca::checkFull() {
@@ -30,7 +30,8 @@ void Biblioteca::add(bool LoR) {
             std::cout <<"Enter the name of the book: "; std:: cin >> nameOftheBook;
             std::cout <<"Enter the number of the volume: "; std:: cin >> numOfVolume;
             std::cout <<"Enter the amount of books: "; std::cin >> numOfBooks;
-            RoL = new Libro(nameOftheBook,numOfVolume,numOfBooks);
+            Libro L1(nameOftheBook,numOfVolume,numOfBooks);
+            V1.push_back(L1);
             maxLibros -= numOfBooks;
         }
     }
@@ -45,7 +46,8 @@ void Biblioteca::add(bool LoR) {
             std::cout <<"Enter the name of the book: "; std:: cin >> nameOfMagazine;
             std::cout <<"Enter the number of the volume: "; std:: cin >> numOfVol;
             std::cout <<"Enter the amount of books: "; std::cin >> numOfMagazine;
-            RoL = new Revista(nameOfMagazine,numOfVol,numOfMagazine);
+            Revista R1(nameOfMagazine,numOfVol,numOfMagazine);
+            V1.push_back(R1);
             maxRevistas -= numOfMagazine;
         }
     }
