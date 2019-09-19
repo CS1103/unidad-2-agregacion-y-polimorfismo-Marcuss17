@@ -9,12 +9,10 @@ class Biblioteca {
 private:
     int maxLibros;
     int maxRevistas;
-    bool full;
     std::vector<Volumen> V1;
 public:
     Biblioteca(int maxLibros, int maxRevistas);
     void mostrarBliblioteca();
-    bool checkFull();
     void add(bool);
 };
 

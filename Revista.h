@@ -8,7 +8,7 @@ private:
     int numRevistas;
 public:
     Revista(std::string nombre, std::string numVol, int numRevistas);
-    void mostrar();
+    void mostrar() override ;
 };
 
 
